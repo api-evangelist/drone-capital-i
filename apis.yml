@@ -16,10 +16,10 @@ description: Drone Capital I is an entry harvested from the Andreessen Horowitz 
   list at https://a16z.com/investment-list/ and added to the API Evangelist network as a portfolio-lead
   stub. Enrichment probing found no operating company, no developer surface, and no API behind this name.
   The naming pattern ("<theme> Capital I") matches a fund or special-purpose investment vehicle rather
-  than an operating startup, and no corresponding corporate website, documentation portal, or public
-  repository could be located. Candidate domains were probed directly and none belong to this entity.
-  This profile is retained as a catalog record of the a16z investment-list entry only; it is not an API
-  provider and carries no API artifacts.
+  than an operating startup, and no corresponding corporate website, documentation portal, or public repository
+  could be located. Candidate domains were probed directly and none belong to this entity. This profile
+  is retained as a catalog record of the a16z investment-list entry only; it is not an API provider and
+  carries no API artifacts.
 url: https://raw.githubusercontent.com/api-evangelist/drone-capital-i/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -27,9 +27,6 @@ x-backed-by:
 - a16z
 x-tier: stub
 x-tier-reason: portfolio-lead
-x-no-api-surface: true
-x-no-api-surface-reason: No operating company or developer surface located; the name pattern indicates
-  a fund or special-purpose vehicle on the a16z investment list rather than an operating company.
 specificationVersion: '0.20'
 created: '2026-07-17'
 modified: '2026-07-20'
@@ -55,6 +52,14 @@ x-enrichment:
   status: nochange
   artifacts_added: 0
   pass: local-v1
-  notes: 'Probed dronecapital.com (HTTP 200, unrelated site), drone.capital (HTTP 200, parked domain
-    listed for sale), dronecapital.io (NXDOMAIN), dronecapitalpartners.com (NXDOMAIN). Search returned
-    no company by this name. No API surface; no artifacts written.'
+  notes: Probed dronecapital.com (HTTP 200, unrelated site), drone.capital (HTTP 200, parked domain listed
+    for sale), dronecapital.io (NXDOMAIN), dronecapitalpartners.com (NXDOMAIN). Search returned no company
+    by this name. No API surface; no artifacts written.
+x-coverage:
+  state: none
+  reason: not-a-software-company
+  detail: No operating company or developer surface located; the name pattern indicates a fund or special-purpose
+    vehicle on the a16z investment list rather than an operating company.
+  evidence: []
+  checked: '2026-08-04'
+  migrated: true
